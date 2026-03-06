@@ -16,14 +16,45 @@ Utilities
 */
 /*Palette*/
 .bg-darkgrey {
-    background-color: rgb(45, 45, 45);
+    background-color: rgb(19, 19, 23);
 }
 .bg-grey {
-    background-color: rgb(96, 96, 96);
+    background-color: rgb(27, 28, 33);
 }
 .bg-lightgrey {
-    background-color: grey;
+    background-color: rgb(44, 44, 54);
 }
-.c-white {
-    color: white;
+.c-lightgrey {
+    color: rgb(148, 148, 148);
+}
+.d-flex-y {
+    display: flex;
+    flex-direction: column
+    ;
+}
+
+/*
+=========================================
+Macroaree
+=========================================
+*/
+body {
+    max-width: 512px;
+    border: 2px solid red;
+    position: relative;
+}
+footer {
+    height: 100px;
+}
+main {
+    height: calc(100vh-100px);
+}
+
+/*
+=========================================
+Sidebar
+=========================================
+*/
+.sidebar-item {
+    flex-wrap: 1;
 }
