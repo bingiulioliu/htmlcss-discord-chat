@@ -32,7 +32,9 @@ Utilities
     flex-direction: column
     ;
 }
-
+ul {
+    list-style: none;
+}
 /*
 =========================================
 Macroaree
@@ -42,6 +44,7 @@ body {
     max-width: 512px;
     border: 2px solid red;
     position: relative;
+    margin: 0 auto;
 }
 footer {
     height: 100px;
@@ -55,6 +58,18 @@ main {
 Sidebar
 =========================================
 */
-.sidebar-item {
-    flex-wrap: 1;
+.sidebar-container {
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    gap: 15px;
+    padding: 20px;
+}
+.sidebar-item img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.sidebar-item:first-child img {
+    border-radius: 0;
 }
