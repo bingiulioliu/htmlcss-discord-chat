@@ -56,9 +56,8 @@ footer {
 }
 main {
     height: calc(100vh-75px);
-    min-height: 700px;
-    width: 100%;
     position: relative;
+    min-height: 800px;
 }
 
 /*
@@ -73,6 +72,7 @@ Sidebar
     gap: 15px;
     padding: 20px;
     flex-shrink: 0;
+    flex-grow: 0;
 }
 .sidebar-item img {
     width: 45px;
@@ -88,7 +88,9 @@ Sidebar
 Message box
 =========================================
 */
-.msg.box {
+.msg-box {
+    display: flex;
+    flex-direction: row;
     flex-grow: 1;
-    height: 95%;
+    flex-basis: calc(1000vw - 70px);
 }
